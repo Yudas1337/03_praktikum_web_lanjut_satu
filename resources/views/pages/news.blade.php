@@ -1,0 +1,1 @@
+{{ __('ini halaman news') }}

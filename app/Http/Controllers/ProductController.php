@@ -8,21 +8,21 @@ class ProductController extends Controller
 {
     public function eduGames()
     {
-        return "Marbel Edu Games";
+        return view('pages.categories.eduGames');
     }
 
     public function kidsGames()
     {
-        return "Marbel and Friends Kids Games";
+        return view('pages.categories.kidsGames');
     }
 
     public function storyBooks()
     {
-        return "Riri Story Books";
+        return view('pages.categories.storyBooks');
     }
 
     public function kidsSongs()
     {
-        return "Kolak Kids Songs";
+        return view('pages.categories.kidsSongs');
     }
 }

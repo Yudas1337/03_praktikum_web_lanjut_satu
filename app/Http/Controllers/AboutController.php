@@ -8,6 +8,6 @@ class AboutController extends Controller
 {
     public function about()
     {
-        return "Halaman About Company Profile";
+        return view('pages.about');
     }
 }

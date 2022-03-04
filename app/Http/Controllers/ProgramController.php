@@ -8,16 +8,16 @@ class ProgramController extends Controller
 {
     public function karir()
     {
-        return "Halaman Program Karir";
+        return view('pages.programs.karir');
     }
 
     public function magang()
     {
-        return "Halaman Program Magang";
+        return view('pages.programs.magang');
     }
 
     public function kunjungan()
     {
-        return "Halaman Program Kunjungan";
+        return view('pages.programs.kunjungan');
     }
 }

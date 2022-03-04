@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
-    public function show($slug = '')
+    public function show()
     {
-        return "Anda membuka halaman news $slug";
+        return view('pages.news');
     }
 }
