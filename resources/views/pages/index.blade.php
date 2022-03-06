@@ -1,3 +1,4 @@
+@section('title', 'Halaman Home')
 @extends('layouts.templates.main')
 @section('main-content')
 
