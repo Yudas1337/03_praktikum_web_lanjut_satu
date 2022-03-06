@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class ProgramController extends Controller
 {
+    public function index()
+    {
+        return view('pages.programs.index');
+    }
+
     public function karir()
     {
         return view('pages.programs.karir');

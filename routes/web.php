@@ -24,24 +24,26 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', [WelcomeController::class, 'index']);
+Route::get('/', [WelcomeController::class, 'index'])->name('indexPage');
 Route::get('home', [HomeController::class, 'index'])->name('home');
 
 Route::prefix('category')->group(function () {
-    Route::get('marbel-edu-games', [ProductController::class, 'eduGames']);
-    Route::get('marbel-and-friends-kids-games', [ProductController::class, 'kidsGames']);
-    Route::get('riri-story-books', [ProductController::class, 'storyBooks']);
-    Route::get('kolak-kids-songs', [ProductController::class, 'kidsSongs']);
+    Route::get('/', [ProductController::class, 'index'])->name('category');
+    Route::get('marbel-edu-games', [ProductController::class, 'eduGames'])->name('eduGames');
+    Route::get('marbel-and-friends-kids-games', [ProductController::class, 'kidsGames'])->name('kidsGames');
+    Route::get('riri-story-books', [ProductController::class, 'storyBooks'])->name('storyBooks');
+    Route::get('kolak-kids-songs', [ProductController::class, 'kidsSongs'])->name('kidsSongs');
 });
 
-Route::get('news/{slug?}', [NewsController::class, 'show']);
+Route::get('news/{slug?}', [NewsController::class, 'show'])->name('news');
 
 Route::prefix('program')->group(function () {
-    Route::get('karir', [ProgramController::class, 'karir']);
-    Route::get('magang', [ProgramController::class, 'magang']);
-    Route::get('kunjungan-industri', [ProgramController::class, 'kunjungan']);
+    Route::get('/', [ProgramController::class, 'index'])->name('program');
+    Route::get('karir', [ProgramController::class, 'karir'])->name('karir');
+    Route::get('magang', [ProgramController::class, 'magang'])->name('magang');
+    Route::get('kunjungan-industri', [ProgramController::class, 'kunjungan'])->name('kunjungan');
 });
 
-Route::get('about-us', [AboutController::class, 'about']);
+Route::get('about-us', [AboutController::class, 'about'])->name('about-us');
 
 Route::resource('contact-us', ContactController::class)->only('index', 'store');
