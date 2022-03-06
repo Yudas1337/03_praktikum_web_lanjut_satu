@@ -6,13 +6,13 @@
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="img_box">
-                    <figure><img src="icon/p2.png" alt="#" /></figure>
+                    <figure><img src=" {{ asset('assets/icon/p2.png') }}" alt="#" /></figure>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 product_detail_side">
                 <div class="abotext_box">
                     <div class="product-heading">
-                        <h2>{{ __('slug-title') }}</h2>
+                        <h2>{{ $title }}</h2>
                     </div>
                     <div class="product-detail-side">
                         <span><del>$679.89</del></span><span class="new-price">$547.60</span>
@@ -62,7 +62,7 @@
                                     <div class="commant-text row">
                                         <div class="col-lg-2 col-md-2 col-sm-4">
                                             <div class="profile">
-                                                <img class="img-responsive" src="images/lllll.png" alt="#">
+                                                <img class="img-responsive" src="{{ asset('assets/images/lllll.png') }}" alt="#">
                                             </div>
                                         </div>
                                         <div class="col-lg-10 col-md-10 col-sm-8">
@@ -82,7 +82,7 @@
                                     <div class="commant-text row">
                                         <div class="col-lg-2 col-md-2 col-sm-4">
                                             <div class="profile">
-                                                <img class="img-responsive" src="images/lllll.png" alt="#">
+                                                <img class="img-responsive" src="{{ asset('assets/images/lllll.png') }}" alt="#">
                                             </div>
                                         </div>
                                         <div class="col-lg-10 col-md-10 col-sm-8">
