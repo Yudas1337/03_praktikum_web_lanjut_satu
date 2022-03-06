@@ -10,7 +10,7 @@
                     <div class="full">
                         <div class="center-desk">
                             <div class="logo">
-                                <a href="index.html"><img src="{{ asset('assets/images/logo.jpg') }}" alt="#"></a>
+                                <a href="{{ route('indexPage') }}"><img src="{{ asset('assets/images/logo.jpg') }}" alt="#"></a>
                             </div>
                         </div>
                     </div>

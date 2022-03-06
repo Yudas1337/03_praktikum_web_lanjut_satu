@@ -33,8 +33,6 @@
 <!-- body -->
 <body class="main-layout">
 
-   @include('layouts.templates.loader')
-
     <div class="wrapper">
         <div class="sidebar">
          <!-- Sidebar  -->
@@ -68,7 +66,6 @@
     <script src="{{ asset('assets/js/jquery-3.0.0.min.js') }}"></script>
     <!-- sidebar -->
     <script src="{{ asset('assets/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
-    <script src="{{ asset('assets/js/custom.js') }}"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
